@@ -3,9 +3,9 @@ version: "3.9"
 services:
   python-service:
     container_name: run-python-with-dependencies
-    image: run-python-with-dependencies:1
+    image: deliveryfee.azurecr.io/pythonapi:latest
     build: 
       context: ./app/
-      dockerfile: Dockerfile  # 'dockerfile' is usually lowercase, but it's not strictly required
+      dockerfile: Dockerfile  
     ports:
-      - "5000:5000"  # Ports in quotes
+      - "5000:5000" 
